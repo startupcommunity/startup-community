@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid" style="background-color:;">
+    <div class="container-fluid" style="padding: 0px 12px;">
         <!-- MENU PRINCIPAL -->
         <div class="row justify-content-center">
             <div class="col-md-12">
@@ -74,7 +74,7 @@
         <!-- FIN 1RA SECCION -->
         <!-- 2DA SECCION -->
         <div class="row seccion-2">
-            <!-- <div class="col-md-1"></div> -->
+
             <div class="col-md-4">
                 <button class="boton-comun">Startup o proyectos</button>
             </div>
@@ -85,7 +85,6 @@
             <div class="col-md-4">
                 <button class="boton-comun">Inversores</button>
             </div>
-            <!-- <div class="col-md-1"></div> -->
 
         </div>
         <!-- FIN 2DA SECCION -->
@@ -535,7 +534,7 @@
 
     .seccion-6{
         /* background-color: linear-gradient(90deg, #004E8F 15%, #2388B9 100%); */
-        background-image:url("tres.png");
+        background-image: url("tres.png");
         padding-left: 60px;
         padding-right: 60px;
         background-size: 100%;
@@ -687,7 +686,7 @@
 
     .seccion-2 {
         position: static;
-        background-color: #035191;
+        background: #035191;
         margin: 0px;
         /* z-index: 1000; */
         padding:0px;
@@ -778,7 +777,7 @@
         display: none;
     }
     .boton-comun{
-        margin: 15px;
+        margin: 10px  60px 15px 80px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
         border: 2px solid #F05918;
@@ -792,7 +791,7 @@
         background: #035191;
         color: white;
         height: 50px;
-        width: 100%;
+        width: 234px;
         left: 950px;
         top: 726px;
         border-radius: 6px;
@@ -920,6 +919,7 @@
         display: block;
         width: 100%;
         height: 270px;
+        padding: 0px;
     }
     .footer-margin{
         margin: 24px 36px 20px 26px;
@@ -1056,5 +1056,6 @@
     .navbar-toggler-icon{
         background-image: url("menu.png");
     }
+
 }
 </style>
