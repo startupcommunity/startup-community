@@ -773,7 +773,6 @@
         padding: 0px;
         margin: -125px 0px 0px 0px;
         width: 100%;
-
     }
     .img-mundo{
         display: none;
