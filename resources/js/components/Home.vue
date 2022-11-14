@@ -772,7 +772,7 @@
         display: block;
         padding: 0px;
         margin: -125px 0px 0px 0px;
-        width: 440px;
+        width: 100%;
 
     }
     .img-mundo{
@@ -793,7 +793,7 @@
         background: #035191;
         color: white;
         height: 50px;
-        width: 350px;
+        width: 100%;
         left: 950px;
         top: 726px;
         border-radius: 6px;
@@ -947,33 +947,33 @@
         padding-top:10px;
     }
     .icono1{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
     }
     .icono2{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
     }
     .icono3{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
     }
     .icono4{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
         margin-top: -150px;
     }
     .icono5{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
     }
     .icono6{
-        width: 420px;
+        width: 100%;
         padding-bottom:36px;
         margin-left:0px;
     }
@@ -996,7 +996,7 @@
     .suscribirme-telefono{
         display: block;
         margin: -70px 0px 0px -30px;
-        width: 151px;
+        /* width: 151px; */
         height: 36px;
 
         /* Segundary/500 */
