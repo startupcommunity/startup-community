@@ -12,7 +12,7 @@
                             <img src="logo-telefono.png" alt="Start Up">
                         </div>
                          <button class="navbar-toggler order-first primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon icono-menu"></span>
+                            <span class=" icono-menu"><img src="menu.png" alt=""></span>
                         </button>
                         <div class="collapse navbar-collapse col-md-5 menu-escritorio" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
