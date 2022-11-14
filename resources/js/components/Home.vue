@@ -830,7 +830,7 @@
 
     .seccion-6{
         /* background-color: linear-gradient(90deg, #004E8F 15%, #2388B9 100%); */
-        background-image:url("tresautroauta.png");
+        background-image:url("tresautroauta.png") !important;
         padding-left: 0px;
         padding-right: 0px;
         background-size: 100%;
