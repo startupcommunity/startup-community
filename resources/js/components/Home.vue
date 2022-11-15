@@ -533,8 +533,7 @@
     }
 
     .seccion-6{
-        /* background-color: linear-gradient(90deg, #004E8F 15%, #2388B9 100%); */
-        background-image: url("tres.png");
+        background-image: url("tres.png") !important;
         padding-left: 60px;
         padding-right: 60px;
         background-size: 100%;
