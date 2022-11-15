@@ -141,7 +141,7 @@
             </div>
         <!-- FIN 5TA SECCION -->
         <!-- 6TA SECCION -->
-            <div class="row seccion-6">
+            <div class="row seccion-6" style="background-image:url('tres.png'); padding-left: 60px; padding-right: 60px;background-size: 100%;padding-bottom: 35px;background-repeat: no-repeat;height: 650px;margin-bottom: 42px !important;">
                 <div class="col-md-4">
                     <button class="boton-seccion-6">Startup</button>
                 </div>
@@ -458,7 +458,6 @@
         padding-top: 7.5px;
         padding-bottom: 7.5px;
     }
-
     .espacio-input{
         width: 500px;
         height: 50px;
@@ -532,16 +531,16 @@
         padding-bottom: 35px;
     }
 
-    .seccion-6{
-        background-image: url("tres.png") !important;
-        padding-left: 60px;
+    /* .seccion-6{ */
+        /* background-image: url("tres.png") !important; */
+        /* padding-left: 60px;
         padding-right: 60px;
         background-size: 100%;
         padding-bottom: 35px;
         background-repeat: no-repeat;
         height: 650px;
-        margin-bottom: 42px !important;
-    }
+        margin-bottom: 42px !important; */
+    /* } */
     .h3-title-6{
         font-family: 'Nunito';
         font-style: normal;
@@ -828,7 +827,6 @@
     }
 
     .seccion-6{
-        /* background-color: linear-gradient(90deg, #004E8F 15%, #2388B9 100%); */
         background-image:url("tresautroauta.png") !important;
         padding-left: 0px;
         padding-right: 0px;
