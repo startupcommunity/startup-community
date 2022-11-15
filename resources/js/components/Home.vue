@@ -1062,7 +1062,7 @@
     .navbar-toggler-icon{
         background-image: url("menu.png");
     }
-    .a-item[data-v-70ff3320] {
+    .a-item {
         color: white;
         margin: auto;
         padding-top: 24px;
