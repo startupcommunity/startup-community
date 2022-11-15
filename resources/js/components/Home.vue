@@ -11,11 +11,14 @@
                         <div class="col-md-1 logo-telefono">
                             <img src="logo-telefono.png" alt="Start Up">
                         </div>
-                         <button class="navbar-toggler order-first primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <!-- <button class="navbar-toggler order-first primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+                            <button class="navbar-toggler order-first primary"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                             <span class=" icono-menu"><img src="menu.png" alt=""></span>
                         </button>
-                        <div class="collapse navbar-collapse col-md-5 menu-escritorio" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <!-- <div class="collapse navbar-collapse col-md-5 menu-escritorio" id="navbarSupportedContent"> -->
+                            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+                            <ul class="navbar-nav menu-hamburguesa">
                                 <li class="nav-item">
                                     <a class="nav-link a-item" aria-current="page" href="#">Home</a>
                                 </li>
@@ -31,6 +34,9 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link a-item" aria-current="page" href="#">Comunidad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link crear-cuenta-telefono boton-menu-hmburguesa" aria-current="page" href="#">CREAR CUENTA</a>
                                 </li>
                             </ul>
                         </div>
@@ -228,6 +234,9 @@
     }
     .redes-sociales{
         padding-top:60px;
+    }
+    .crear-cuenta-telefono{
+        display: none;
     }
     .iniciarsesion{
         margin: 0px;
@@ -1052,6 +1061,52 @@
     }
     .navbar-toggler-icon{
         background-image: url("menu.png");
+    }
+    .a-item[data-v-70ff3320] {
+        color: white;
+        margin: auto;
+        padding-top: 24px;
+        padding-bottom: 0px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        background-color: #0071BC;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    div #offcanvasDarkNavbar{
+        background-color: #0071BC;
+
+    }
+    .crear-cuenta-telefono{
+        display: block;
+    }
+    .menu-hamburguesa{
+        margin-top:65px;
+    }
+
+    .boton-menu-hmburguesa{
+        padding: 10px;
+        gap: 10px;
+        color:white;
+        width: 241px;
+        height: 36px;
+
+        /* Segundary/500 */
+        margin: 50px auto;
+        text-align: center;
+        background: #F05918;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
     }
 
 }
