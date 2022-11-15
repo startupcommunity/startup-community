@@ -15,7 +15,8 @@
         <div id="app" class="content"><!--La equita id debe ser app, como hemos visto en app.js-->
                 <Home></Home><!--Añadimos nuestro componente vuejs-->
             </div>
-            @vite('resources/js/app.js')
+            {{-- @vite('resources/js/app.js') --}}
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
         {{-- <script src="{{asset('js/app.js')}}"></script> --}}
     </body>
 

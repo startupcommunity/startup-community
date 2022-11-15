@@ -540,16 +540,16 @@
         padding-bottom: 35px;
     }
 
-    /* .seccion-6{ */
-        /* background-image: url("tres.png") !important; */
-        /* padding-left: 60px;
+     .seccion-6{
+        background-image: url("tres.png") !important;
+        padding-left: 60px;
         padding-right: 60px;
         background-size: 100%;
         padding-bottom: 35px;
         background-repeat: no-repeat;
         height: 650px;
-        margin-bottom: 42px !important; */
-    /* } */
+        margin-bottom: 42px !important;
+     }
     .h3-title-6{
         font-family: 'Nunito';
         font-style: normal;
