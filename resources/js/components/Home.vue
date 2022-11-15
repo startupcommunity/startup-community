@@ -147,7 +147,7 @@
             </div>
         <!-- FIN 5TA SECCION -->
         <!-- 6TA SECCION -->
-            <div class="row seccion-6" style="background-image:url('tres.png'); padding-left: 60px; padding-right: 60px;background-size: 100%;padding-bottom: 35px;background-repeat: no-repeat;height: 650px;margin-bottom: 42px !important;">
+            <div class="row seccion-6">
                 <div class="col-md-4">
                     <button class="boton-seccion-6">Startup</button>
                 </div>
