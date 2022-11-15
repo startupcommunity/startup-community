@@ -217,6 +217,9 @@
     .espacio-input-telefono{
         display: none;
     }
+    div#offcanvasDarkNavbar {
+        padding-left: 65px;
+    }
     .suscribirme-telefono{
         display: none;
     }
@@ -532,7 +535,7 @@
         padding-bottom: 85px;
     }
      .seccion-5{
-        background-image:url("Fondo estrellas.png");
+        background-image:url("./assets/estrellas.png");
         background-size: 70%;
         background-repeat: no-repeat;
         z-index: 1000;
@@ -784,7 +787,7 @@
         display: none;
     }
     .boton-comun{
-        margin: 10px  60px 15px 80px;
+        margin: 10px  60px 15px 60px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
         border: 2px solid #F05918;
