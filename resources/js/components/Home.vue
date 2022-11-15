@@ -541,7 +541,7 @@
     }
 
      .seccion-6{
-        background-image: url("tres.png") !important;
+        background-image: url("./assets/tres.png") !important;
         padding-left: 60px;
         padding-right: 60px;
         background-size: 100%;
