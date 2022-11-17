@@ -19,9 +19,11 @@ const app = createApp({});
 
 import Maintain from './pages/Maintain.vue';
 import Home from './pages/Home.vue';
+import Login from './pages/Login.vue';
 
 app.component('Maintain', Maintain);
 app.component('Home', Home);
+app.component('Login', Login);
 
 
 /**

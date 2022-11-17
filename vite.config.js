@@ -6,18 +6,11 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-
-                //Styles
                 'resources/sass/app.scss',
                 'resources/js/app.js',
                 'resources/css/app.css',
-                'resources/css/custom.css',
-                
-
-                //Components
                 'resources/js/pages/Maintain.js',
                 'resources/js/pages/Home.js',
-                
             ],
             refresh: true,
         }),
