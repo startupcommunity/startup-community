@@ -17,10 +17,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-import Home from './components/Home.vue';
+import Maintain from './pages/Maintain.vue';
+import Home from './pages/Home.vue';
 
-app.component('example-component', ExampleComponent);
+app.component('Maintain', Maintain);
 app.component('Home', Home);
 
 

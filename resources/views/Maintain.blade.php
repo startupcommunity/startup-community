@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Startup Community</title>
         {{-- <link href="{{asset('css/app.css')}}" rel="stylesheet"> --}}
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     </head>
     <body class="antialiased" style="background: linear-gradient(90deg, #004E8F 15%, #2388B9 100%);overflow-x: hidden;">
         <div id="app" class="content">
-            <Home></Home>
+            <MAINTAIN></MAINTAIN>
         </div>
             
             @vite(['resources/css/app.css', 'resources/js/app.js'])
