@@ -903,16 +903,20 @@
 button#sendlogin{
 
 
-display: block;
-margin: 10px auto;
-padding: 8px;
-color: white;
-border-radius: 5px;
-width: 60%;
-background-color: #bd13b8;
-border: none;
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    background-color: #bd13b8;
+    border: none;
+    font-weight: bold;
 
 }
+
+/* formulario de login */
+
 
 .form-group{
     margin-bottom: 29px;
@@ -921,10 +925,14 @@ border: none;
 }
 
 .titulo{
-
-align-items: center !important;
-display: flex;
-text-align: center;
+    padding: 0;
+    margin: 10px 0;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
     
 }
 
@@ -938,14 +946,23 @@ div#app{
 
 .card-body{
 
-  background-color: #0D659F ;  
-  
+    Background-color: transparent; ;  
+    border: #BD13B8;
 }
 
-.colcentrado{
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    Background-color: transparent;
+    background-clip: border-box;
+    border: 0px solid rgba(213, 132, 132, 0.125);
+    border-radius: 0.25rem;
+}
 
-    flex: 0 0 auto;
-    width: 46.333333%
-
-
+.card-login label{
+    color: white;
+    font-weight: bold;
 }
