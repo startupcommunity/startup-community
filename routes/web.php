@@ -24,3 +24,8 @@ Route::get('home', function () {
 Route::get('login', function () {
     return view('Login');
 });
+
+
+Route::get('registro', function () {
+    return view('Registro');
+});

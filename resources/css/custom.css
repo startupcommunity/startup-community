@@ -966,3 +966,13 @@ div#app{
     color: white;
     font-weight: bold;
 }
+
+
+.registro{
+
+
+    white-space: pre;
+    display: flex;
+    justify-content: center;
+
+}
