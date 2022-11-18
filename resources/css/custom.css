@@ -897,3 +897,55 @@
     }
 
 }
+
+/* boton de vamos */
+
+button#sendlogin{
+
+
+display: block;
+margin: 10px auto;
+padding: 8px;
+color: white;
+border-radius: 5px;
+width: 60%;
+background-color: #bd13b8;
+border: none;
+
+}
+
+.form-group{
+    margin-bottom: 29px;
+    border: none;
+
+}
+
+.titulo{
+
+align-items: center !important;
+display: flex;
+text-align: center;
+    
+}
+
+
+div#app{
+
+    background-image: url("/public/Login.png") !important;
+    background-size: cover;
+}
+
+
+.card-body{
+
+  background-color: #0D659F ;  
+  
+}
+
+.colcentrado{
+
+    flex: 0 0 auto;
+    width: 46.333333%
+
+
+}
