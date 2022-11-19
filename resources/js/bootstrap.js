@@ -11,7 +11,7 @@ import 'bootstrap';
 
 import axios from 'axios';
 window.axios = axios;
-window.URLAPI = "http://localhost/startup-community/public/api";
+window.URLAPI = import.meta.env.VITE_SENTRY_URL_PUBLIC +'api';
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

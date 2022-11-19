@@ -75,7 +75,8 @@ class authController extends Controller
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse($token->expires_at)->toDateTimeString(),
-            'message' => 'Usuario creado exitosamente!'
+            'message' => 'Usuario creado exitosamente!',
+            'user' => $user->load('profile')
         ], 200);
     }
 
@@ -109,7 +110,8 @@ class authController extends Controller
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse($token->expires_at)->toDateTimeString(),
-            'message' => 'Logueo exitoso!'
+            'message' => 'Logueo exitoso!',
+            'user' => $user->load('profile')
         ]);
     }
     /**
