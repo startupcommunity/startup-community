@@ -20,7 +20,7 @@ const app = createApp({});
 import Maintain from './pages/Maintain.vue';
 import Home from './pages/Home.vue';
 import Login from './pages/Login.vue';
-import Registro from './pages/Registro.vue';
+import Registro from './pages/Register.vue';
 
 app.component('Maintain', Maintain);
 app.component('Home', Home);

@@ -3,5 +3,5 @@
 @section('title', 'Registro')
 
 @section('content')
-    <Registro></Registro>
+    <Register></Register>
 @endsection
