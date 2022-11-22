@@ -23,7 +23,6 @@ import Login from './pages/Login.vue';
 import Registro from './pages/Registro.vue';
 import roles from './pages/roles.vue';
 
-
 app.component('Maintain', Maintain);
 app.component('Home', Home);
 app.component('Login', Login);
