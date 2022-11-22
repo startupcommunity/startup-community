@@ -28,3 +28,11 @@ Route::get('login', function () {
 Route::get('registro', function () {
     return view('Registro');
 });
+
+Route::get('roles', function () {
+    return view('roles');
+});
+
+Route::get('informacion', function () {
+    return view('informacion');
+});

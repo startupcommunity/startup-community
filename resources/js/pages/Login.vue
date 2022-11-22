@@ -11,7 +11,6 @@
                             <div class="form-group">
                                 <input v-model="user.email" type="text" class="form-control" name="email">
                             </div>
-
                             <label> Contraseña</label>
                             <div class="form-group">
                                 <input v-model="user.password" type="password" class="form-control" name="password">

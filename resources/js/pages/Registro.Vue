@@ -8,8 +8,7 @@
                    <div class="card">					
                        <div class="card-body card-login">
                            <h1 class="titulo">Registrarme</h1>
-                           <form action="" autocomplete="off">		
-                               
+                           <form action="" autocomplete="off">		                              
                                <label> Nombre y Apellido </label>
                                <div class="form-group">
                                    <input type="text" class="form-control"  v-model="user.name">
@@ -27,11 +26,8 @@
                                    <input type="password" class="form-control"  v-model="user.password_confirmation" >
                                </div>
                                <h1  class="titulo registro">Emprende,colabora,invierte y DESCARGA</h1>
-                               <button type="button" @click="signup()" id="sendlogin" class="btn btn-primary ">¡VAMOS!</button>
-                             
-                           </form>
-                           
-                          
+                               <button type="button" @click="signup()" id="sendlogin" class="btn btn-primary ">¡VAMOS!</button>                            
+                           </form>                                                  
                        </div>
                    </div>
                </div>
@@ -47,14 +43,12 @@
 					password: "",
                     password_confirmation:"",
                     name:""
-
 				}
 			}
 		},	
 		methods:{
 			async signup() {
-				const datos = await axios.post(`${URLAPI}/auth/signup`,this.user);
-				
+				const datos = await axios.post(`${URLAPI}/auth/signup`,this.user);				
 			}
 		}
 	}
