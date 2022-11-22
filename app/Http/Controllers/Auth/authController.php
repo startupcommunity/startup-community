@@ -63,6 +63,7 @@ class authController extends Controller
             Auth::attempt($credentials);
 
             /***Respuestas JSON***/
+            Auth::login($user, true);
             $user = $request->user();
             $tokenResult = $user->createToken('Personal Access Token');
 
@@ -100,7 +101,7 @@ class authController extends Controller
 
         $user = $request->user();
         $tokenResult = $user->createToken('Personal Access Token');
-
+        Auth::login($user, true);
         $token = $tokenResult->token;
         if ($request->remember_me)
             $token->expires_at = Carbon::now()->addWeeks(1);

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 /*Perfil y oauth*/
 use App\Http\Controllers\Auth\authController;
+use App\Http\Controllers\Profile\profileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::prefix('auth')->group(function () {
 
     Route::middleware(['auth:api'])->group(function () {
         Route::get('/logout', [AuthController::class, 'logout']);
-
+        Route::post('/asign/roll', [profileController::class, 'asign_roll']);
+        Route::post('/profile/data', [profileController::class, 'profile_data']);
     });
 });
