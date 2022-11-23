@@ -1103,11 +1103,11 @@ background-size: cover;
 }
 
 
-/*rol Profesionales*/
+/*rol inversores*/
 
 .inversores{
 
-    background-image: url("/public/profesionales.png");
+    background-image: url("/public/Inversores.png");
     background-size: cover;
 
 }
