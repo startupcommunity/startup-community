@@ -1093,3 +1093,21 @@ input.form-control{
 
 }
 
+/*rol Profesionales*/
+
+.profesionales{
+
+background-image: url("/public/profesionales.png");
+background-size: cover;
+
+}
+
+
+/*rol Profesionales*/
+
+.inversores{
+
+    background-image: url("/public/profesionales.png");
+    background-size: cover;
+
+}

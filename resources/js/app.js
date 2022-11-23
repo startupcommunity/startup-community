@@ -23,8 +23,8 @@ import Login from './pages/Login.vue';
 import Registro from './pages/Registro.vue';
 import roles from './pages/roles.vue';
 import startups from './pages/startups.vue';
-
-
+import profesionales from './pages/profesionales.vue';
+import inversores from './pages/inversores.vue';
 
 
 
@@ -34,7 +34,8 @@ app.component('Login', Login);
 app.component('Registro', Registro);
 app.component('roles', roles);
 app.component('startups',startups);
-
+app.component('profesionales',profesionales);
+app.component('inversores',inversores);
 
 /**
  * The following block of code may be used to automatically register your

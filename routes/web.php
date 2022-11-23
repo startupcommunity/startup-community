@@ -38,6 +38,12 @@ Route::get('startups', function () {
     return view('startups');
 });
 
+Route::get('profesionales', function () {
+    return view('profesionales');
+});
 
 
+Route::get('inversores', function () {
+    return view('inversores');
+});
 
