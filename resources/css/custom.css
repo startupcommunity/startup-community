@@ -1019,5 +1019,77 @@ button#roles{
     border-color: #BD13B8;      
 }
 
+/*rol startup*/
+.startups{
 
+    background-image: url("/public/startups.png");
+    background-size: cover;
+
+
+}
+
+.datastartup{
+    padding: 0;
+    margin: 10px 0;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    white-space: nowrap;
+
+}
+
+.startupsBoton{    
+display: flex;
+display: flex;
+padding: 14%;
+width: auto;
+}
+
+
+button#atras{
+
+    margin: auto;
+    color: white;
+    width: auto;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: white;
+    white-space: pre;
+}
+
+button#siguiente{
+    margin: auto;
+    color: white;
+    width: auto;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #BD13B8;
+    white-space: pre   
+}
+
+
+input#descripcion {
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    color: #107AC0;
+}
+
+input.form-control{
+
+    color: #107AC0;
+
+
+}
 

@@ -33,6 +33,11 @@ Route::get('roles', function () {
     return view('roles');
 });
 
-Route::get('informacion', function () {
-    return view('informacion');
+
+Route::get('startups', function () {
+    return view('startups');
 });
+
+
+
+

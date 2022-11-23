@@ -22,12 +22,18 @@ import Home from './pages/Home.vue';
 import Login from './pages/Login.vue';
 import Registro from './pages/Registro.vue';
 import roles from './pages/roles.vue';
+import startups from './pages/startups.vue';
+
+
+
+
 
 app.component('Maintain', Maintain);
 app.component('Home', Home);
 app.component('Login', Login);
 app.component('Registro', Registro);
 app.component('roles', roles);
+app.component('startups',startups);
 
 
 /**
