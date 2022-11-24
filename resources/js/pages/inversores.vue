@@ -1,33 +1,32 @@
 <template>
 <div class="inversores">
-        <div class="container">
+    <div class="container">
            <div class="row justify-content-center align-items-center" style="height:100vh">
-               <div class="col-xl-6 col-sm-12">				
+               <div class="col-xl-5 col-sm-12">				
                    <div class="card">					
                        <div class="card-body card-login">
-                           <h1 class="datastartup">¿Eres Inversor?</h1>
-                           <h1  class="titulo registro">Completa la siguiente informacion</h1>
+                           <h2>¿Eres Inversor?</h2>
+                           <h3>Completa la siguiente información</h3>
                            <form action="" autocomplete="off">		                              
-                               <label> Que tipo de Inversor eres </label>
-                               <div class="formulario">
+                               <label>Qué tipo de inversor eres</label>
                                <div class="form-group">
-                                   <input type="text" class="form-control" value="Eje. Iniciando,Habitual,Intermedio,Macro inverso" >
+                                   <input type="text" class="form-control" value="Eje. Iniciando, Habitual, intermedio, macro inverso.">
                                </div>
-                               <label> Área de desempeño </label>
+                               <label>Área de desempeño</label>
                                <div class="form-group">
-                                   <input type="text" class="form-control" value="Eje. Tegnologia,Comunicacion,Educacion" >
+                                   <input type="text" class="form-control" value="Eje. Tecnología, comunicaión, educación" >
                                </div>   
-                               <label> Descripcion</label>
+                               <label> Descripción</label>
                                <div class="form-group">
-                                   <input type="text" id="descripcion" class="form-control" value="Danos un stracto sobre ti"  >
-                                   
-                               </div>
-                                <div class="startupsBoton col-xl-12" >           
-                               <button type="button" id="atras" class="btn btn-primary">VOLVER ATRAS</button>                                                         
-                               <button type="button" id="siguiente" class="btn btn-primary">SIGUIENTE</button>    
-                            </div>   
-                            </div>  
-                           </form>                                                  
+                                   <input type="text" class="form-control" value="Danos un extracto sobre ti">
+                               </div>                                    
+                               <div class="botoness">
+                                <button type="button"  id="ATRÁS" class="btn btn-primary ">VOLVER ATRÁS</button>
+                               <button type="button"  id="SIGUIENTE" class="btn btn-primary ">SIGUIENTE</button>   
+                            </div>              
+                                                        
+                           </form>      
+                           
                        </div>
                    </div>
                </div>

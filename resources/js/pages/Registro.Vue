@@ -1,10 +1,11 @@
 <template> 
+<div class="registro">
     <div class="container">
            <div class="row justify-content-center align-items-center" style="height:100vh">
                <div class="col-xl-4 col-sm-12">				
                    <div class="card">					
                        <div class="card-body card-login">
-                           <h1 class="titulo">Registrarme</h1>
+                           <h2>Registrarme</h2>
                            <form action="" autocomplete="off">		                              
                                <label> Nombre y Apellido </label>
                                <div class="form-group">
@@ -21,8 +22,8 @@
                                <label> Confirmar Contraseña</label>
                                <div class="form-group">
                                    <input type="password" class="form-control"  v-model="user.password_confirmation" >
-                               </div>
-                               <h1  class="titulo registro">Emprende,colabora,invierte y DESCARGA</h1>
+                               </div>                              
+                               <h2>Emprende,colabora,invierte y DESCARGA</h2>                            
                                <button type="button" @click="signup()" id="sendlogin" class="btn btn-primary ">¡VAMOS!</button>                            
                            </form>                                                  
                        </div>
@@ -30,6 +31,7 @@
                </div>
            </div>
        </div>
+    </div>
     </template>
     <script>
 	export default {

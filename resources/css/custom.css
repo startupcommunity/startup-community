@@ -162,7 +162,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 30px 0px 30px;
-        justify: space-between;
+    
         text-align: center;
 
     }
@@ -186,7 +186,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 30px 0px 30px;
-        justify: space-between;
+ 
         text-align: center;
     }
     .boton-seccion-7{
@@ -209,7 +209,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 30px 0px 30px;
-        justify: space-between;
+   
         text-align: center;
     }
     .boton-seccion-8{
@@ -232,7 +232,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 30px 0px 30px;
-        justify: space-between;
+
         text-align: center;
     }
     .seccion-3{
@@ -590,7 +590,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 11px 0px 11px;
-        justify: space-between;
+    
         text-align: center;
     }
     .linea{
@@ -705,7 +705,7 @@
         top: 726px;
         border-radius: 6px;
         padding: 0px 30px 0px 30px;
-        justify: space-between;
+       
         text-align: center;
     }
     .banner-version-telefono{
@@ -925,15 +925,22 @@ button#sendlogin{
 }
 
 h2{
-
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     color: white;
-
+    font-weight: bold
+    
+ 
 }
 
 
-div#app{
+.login{
+    background-image: url("/public/Login.png");
+    background-size: cover;
+}
 
+.registro{
     background-image: url("/public/Login.png");
     background-size: cover;
 }
@@ -962,67 +969,41 @@ div#app{
     font-weight: bold;
 }
 
-
 .registro{
-
-
     white-space: pre;
     display: flex;
     justify-content: center;
 
 }
+input.form-control{
 
+    color:#4F9DD1 ;
+}
 /* fondo de pagina roles */
-
-
-
 .roles{
 
     background-image: url("/public/roles.png");
     background-size: cover;
 }
-
-.tituloderoles{
-    padding: 0;
-    margin: 60px 0;
-    width: auto;
-    max-width: 100%;
-    display: block; 
-    position: relative;
-    font-weight: bolder; 
-    text-align:center;
-
-
-}
-
-/* padre */
-.botonesroles{
-
-    position: absolute;
-    bottom: auto;
-    width: inherit;
-    top: 283%;
+.alinearabajo{
+    display: flex;
+    margin-top: 40%;
 }
 /* botones de roles */
 button#roles{  
     margin: auto;
     color: white;  
-    width: 20%;
+    width: auto;
     background-color: transparent;   
     font-weight: bold;
     border-radius: 5px;
     border-color: #BD13B8;      
 }
-
 /*rol startup*/
 .startups{
-
     background-image: url("/public/startups.png");
     background-size: cover;
-
-
 }
-
 .datastartup{
     padding: 0;
     margin: 10px 0;
@@ -1035,59 +1016,6 @@ button#roles{
     white-space: nowrap;
 
 }
-
-.startupsBoton{    
-display: flex;
-display: flex;
-padding: 14%;
-width: auto;
-}
-
-
-button#atras{
-
-    margin: auto;
-    color: white;
-    width: auto;
-    background-color: transparent;
-    font-weight: bold;
-    border-radius: 5px;
-    border-color: white;
-    white-space: pre;
-}
-
-button#siguiente{
-    margin: auto;
-    color: white;
-    width: auto;
-    background-color: transparent;
-    font-weight: bold;
-    border-radius: 5px;
-    border-color: #BD13B8;
-    white-space: pre   
-}
-
-
-input#descripcion {
-    width: 100%;
-    height: auto;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-    color: #107AC0;
-}
-
-input.form-control{
-
-    color: #107AC0;
-
-
-}
-
 /*rol Profesionales*/
 
 .profesionales{
@@ -1096,13 +1024,48 @@ background-image: url("/public/profesionales.png");
 background-size: cover;
 
 }
-
-
 /*rol inversores*/
-
 .inversores{
 
     background-image: url("/public/Inversores.png");
     background-size: cover;
+
+}
+h3{
+
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    justify-content: center;
+}
+.botoness{
+    display: flex;
+}
+button#SIGUIENTE{
+
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    color: white ;
+    border-radius: 5px;
+    width: 40%;
+    background-color: transparent;
+     font-weight: bold;
+    border-color:  #BD13B8;
+
+}
+
+button#ATRÁS{
+
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    width: 40%;
+    background-color: transparent;
+    font-weight: bold;
+    border-color: white;
+
 
 }

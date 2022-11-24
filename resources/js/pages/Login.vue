@@ -1,9 +1,11 @@
  <template> 
+ <div class="login">
  	<div class="container">
         <div class="row justify-content-center align-items-center" style="height:100vh">
             <div class="col-xl-4 col-sm-12">				
                 <div class="card">					
                     <div class="card-body card-login">
+                        
 						<h2 class=" align-items-center ">Bienvenidos a startups</h2>						
                         <form action="" autocomplete="off">		
 							
@@ -22,6 +24,7 @@
             </div>
         </div>
     </div>
+</div>
  </template>
 <script>
 
