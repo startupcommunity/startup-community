@@ -4,7 +4,7 @@
             <div class="col-xl-4 col-sm-12">				
                 <div class="card">					
                     <div class="card-body card-login">
-						<h1 class="titulo">Bienvenidos a <br>startups</h1>						
+						<h2 class=" align-items-center ">Bienvenidos a startups</h2>						
                         <form action="" autocomplete="off">		
 							
 							<label> Email</label>

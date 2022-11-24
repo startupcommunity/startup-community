@@ -924,16 +924,11 @@ button#sendlogin{
 
 }
 
-.titulo{
-    padding: 0;
-    margin: 10px 0;
-    width: auto;
-    max-width: 100%;
-    display: block;
+h2{
+
     text-align: center;
-    position: relative;
-    font-weight: bolder;
-    
+    color: white;
+
 }
 
 
