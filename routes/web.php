@@ -14,38 +14,38 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Maintain');
+    return view('landing.maintain');
 });
 
-Route::get('home', function () {
-    return view('Home');
+Route::get('/home', function () {
+    return view('landing/home');
 });
 
-Route::get('login', function () {
-    return view('Login');
-});
+Route::get('/login', function () {
+    return view('auth.Login');
+})->name('login');
 
-Route::get('registro', function () {
-    return view('Registro');
-});
+Route::get('/registro', function () {
+    return view('auth.registro');
+})->name('register');
 
-Route::get('roles', function () {
-    return view('roles');
-});
-
-
-Route::get('startups', function () {
-    return view('startups');
-});
-
-Route::get('profesionales', function () {
-    return view('profesionales');
-});
+Route::get('/roles', function () {
+    return view('auth.roles');
+})->name('role');
 
 
-Route::get('inversores', function () {
-    return view('inversores');
-});
+Route::get('/startups', function () {
+    return view('profile.startups');
+})->name('startups');
+
+Route::get('/profesionales', function () {
+    return view('profile.profesionales');
+})->name('professionals');
+
+
+Route::get('/inversores', function () {
+    return view('profile.inversores');
+})->name('investors');
 
 Route::get('tablero', function () {
     return view('tablero');

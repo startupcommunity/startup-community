@@ -11,15 +11,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         @stack('scripts')
     </head>
+    
     <body class="antialiased" style="background: linear-gradient(90deg, #004E8F 15%, #2388B9 100%);overflow-x: hidden;">
-        @include('layouts.header')
-        <div  class="container-fluid" style="padding: 0px 12px;">
-            <div id="app">
-                @yield('content')
-            </div>    
-        </div>        
-        @include('layouts.footer')    
-        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/custom.css'])
+        <div id="app" class="content">
+        	@yield('content')
+        </div>    
+            @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/custom.css'])
+        
     </body>
+
 </html>
 
