@@ -18,7 +18,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const app = createApp({});
 import Maintain from './pages/landing/maintain.vue';
 import Home from './pages/landing/home.vue';
-import dashboard from './pages/dashboard.vue';
+import dashboard from './pages/dashboard/dashboard.vue';
 
 
 /*Landings*/
@@ -34,13 +34,6 @@ import Startups from './pages/profile/startups.vue';
 import Profesionales from './pages/profile/profesionales.vue';
 import Inversores from './pages/profile/inversores.vue';
 
-/* dashboard */
-
-import Empresas from './pages/dashboard/Empresas.vue';
-import Empresa from './pages/dashboard/Empresa.vue';
-import Info from './pages/dashboard/Info.vue';
-import Filtrado from './pages/dashboard/Filtrado.vue';
-
 app.component('Login', Login);
 app.component('Registro', Registro);
 app.component('roles', roles);
@@ -48,6 +41,15 @@ app.component('dashboard',dashboard);
 app.component('Startups',Startups);
 app.component('Profesionales',Profesionales);
 app.component('Inversores',Inversores);
+
+/* dashboard */
+
+import Empresas from './pages/dashboard/Empresas.vue';
+import Empresa from './pages/dashboard/Empresa.vue';
+import Info from './pages/dashboard/Info.vue';
+import Filtrado from './pages/dashboard/Filtrado.vue';
+
+
 app.component('Empresas',Empresas);
 app.component('Empresa',Empresa);
 app.component('Info',Info);

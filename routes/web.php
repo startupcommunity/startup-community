@@ -47,12 +47,12 @@ Route::get('/inversores', function () {
     return view('profile.inversores');
 })->name('investors');
 
-Route::get('tablero', function () {
+Route::get('/tablero', function () {
     return view('tablero');
 });
 
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
+Route::get('/dashboard', function () {
+    return view('dashboards.dashboard');
+})->name('dashboards');
 
 
