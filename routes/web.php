@@ -47,3 +47,12 @@ Route::get('inversores', function () {
     return view('inversores');
 });
 
+Route::get('tablero', function () {
+    return view('tablero');
+});
+
+Route::get('dashboard', function () {
+    return view('dashboard');
+});
+
+

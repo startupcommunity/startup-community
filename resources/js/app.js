@@ -25,7 +25,7 @@ import roles from './pages/roles.vue';
 import startups from './pages/startups.vue';
 import profesionales from './pages/profesionales.vue';
 import inversores from './pages/inversores.vue';
-
+import dashboard from './pages/dashboard.vue';
 
 
 app.component('Maintain', Maintain);
@@ -36,6 +36,8 @@ app.component('roles', roles);
 app.component('startups',startups);
 app.component('profesionales',profesionales);
 app.component('inversores',inversores);
+app.component('dashboard',dashboard);
+
 
 /**
  * The following block of code may be used to automatically register your
