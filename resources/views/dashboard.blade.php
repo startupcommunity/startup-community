@@ -1,7 +1,5 @@
-@extends('layouts.app')
+@extends("layouts.appAuth")
 
-@section('title', 'dashboard')
-
-@section('content')
-    <dashboard> </dashboard>
-@endsection
+<div id="app">
+    <dashboard></dashboard>
+</div>

@@ -10,10 +10,13 @@ import 'bootstrap';
  */
 
 import axios from 'axios';
+import mitt from 'mitt'
 window.axios = axios;
 window.URLAPI = import.meta.env.VITE_SENTRY_URL_PUBLIC +'api';
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+window.objEmit = mitt();
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

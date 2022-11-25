@@ -16,16 +16,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
  */
 
 const app = createApp({});
-
-
-import dashboard from './pages/dashboard.vue';
-/*Landings*/
-
 import Maintain from './pages/landing/maintain.vue';
 import Home from './pages/landing/home.vue';
+import dashboard from './pages/dashboard.vue';
 
+
+/*Landings*/
 app.component('Maintain', Maintain);
 app.component('Home', Home);
+
 
 /*auth & profiles*/
 import Login from './pages/auth/login.vue';
@@ -35,6 +34,12 @@ import Startups from './pages/profile/startups.vue';
 import Profesionales from './pages/profile/profesionales.vue';
 import Inversores from './pages/profile/inversores.vue';
 
+/* dashboard */
+
+import Empresas from './pages/dashboard/Empresas.vue';
+import Empresa from './pages/dashboard/Empresa.vue';
+import Info from './pages/dashboard/Info.vue';
+import Filtrado from './pages/dashboard/Filtrado.vue';
 
 app.component('Login', Login);
 app.component('Registro', Registro);
@@ -43,6 +48,10 @@ app.component('dashboard',dashboard);
 app.component('Startups',Startups);
 app.component('Profesionales',Profesionales);
 app.component('Inversores',Inversores);
+app.component('Empresas',Empresas);
+app.component('Empresa',Empresa);
+app.component('Info',Info);
+app.component('Filtrado',Filtrado);
 
 /**
  * The following block of code may be used to automatically register your
