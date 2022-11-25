@@ -3,7 +3,7 @@
 @section('title', 'Mantenimiento')
 
 @section('content')
-    <MAINTAIN></MAINTAIN>
+    <Maintain></Maintain>
 @endsection
 
 

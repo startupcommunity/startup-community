@@ -17,25 +17,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const app = createApp({});
 
-import Maintain from './pages/Maintain.vue';
-import Home from './pages/Home.vue';
-import Login from './pages/Login.vue';
-import Registro from './pages/Registro.vue';
-import roles from './pages/roles.vue';
-import startups from './pages/startups.vue';
-import profesionales from './pages/profesionales.vue';
-import inversores from './pages/inversores.vue';
+/*Landings*/
 
-
+import Maintain from './pages/landing/maintain.vue';
+import Home from './pages/landing/home.vue';
 
 app.component('Maintain', Maintain);
 app.component('Home', Home);
+
+/*auth & profiles*/
+import Login from './pages/auth/login.vue';
+import Registro from './pages/auth/register.vue';
+import roles from './pages/auth/roles.vue';
+import Startups from './pages/profile/startups.vue';
+import Profesionales from './pages/profile/profesionales.vue';
+import Inversores from './pages/profile/inversores.vue';
+
+
 app.component('Login', Login);
 app.component('Registro', Registro);
 app.component('roles', roles);
-app.component('startups',startups);
-app.component('profesionales',profesionales);
-app.component('inversores',inversores);
+app.component('Startups',Startups);
+app.component('Profesionales',Profesionales);
+app.component('Inversores',Inversores);
 
 /**
  * The following block of code may be used to automatically register your

@@ -2,11 +2,11 @@
 <div class="registro">
     <div class="container">
            <div class="row justify-content-center align-items-center" style="height:100vh">
-               <div class="col-xl-4 col-sm-12">				
-                   <div class="card">					
+               <div class="col-xl-4 col-sm-12">             
+                   <div class="card">                   
                        <div class="card-body card-login">
                            <h2>Registrarme</h2>
-                           <form action="" autocomplete="off">		                              
+                           <form action="" autocomplete="off">                                    
                                <label> Nombre y Apellido </label>
                                <div class="form-group">
                                    <input type="text" class="form-control"  v-model="user.name">
@@ -34,21 +34,21 @@
     </div>
     </template>
     <script>
-	export default {
-		data() {
-			return {
-				user: {
-					email: "",
-					password: "",
+    export default {
+        data() {
+            return {
+                user: {
+                    email: "",
+                    password: "",
                     password_confirmation:"",
                     name:""
-				}
-			}
-		},	
-		methods:{
-			async signup() {
-				const datos = await axios.post(`${URLAPI}/auth/signup`,this.user);				
-			}
-		}
-	}
+                }
+            }
+        },  
+        methods:{
+            async signup() {
+                const datos = await axios.post(`${URLAPI}/auth/signup`,this.user);              
+            }
+        }
+    }
 </script>
