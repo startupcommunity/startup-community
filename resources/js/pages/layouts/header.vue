@@ -1,3 +1,21 @@
+<script>
+    export default {
+        async mounted() {
+            await this.$store.dispatch('userRequest');
+            this.user = this.$store.getters.getProfile.user;
+            this.rol = this.$store.getters.getProfile.rol[0];
+            this.isAuthenticated = this.$store.getters.isAuthenticated;
+            
+        },
+        data() {
+            return {
+                user: null,
+                rol: null,
+                isAuthenticated: false
+            }
+        },
+    }
+</script>
 <template>
 <!-- Inicio Header -->
 <header class="d-flex flex-wrap justify-content-center py-0 mb-4 border-bottom">
@@ -36,13 +54,21 @@
                             </li>-->
                         </ul>
                     </div>
-                    <div class="col-md-2 icono nav-item">
-                        <router-link :to="{ name: 'login' }" class=" me-auto mb-2 mb-lg-0"><img src="user.png" class="user-version-telefono" alt="Iniciar sesion"/><span class="iniciarsesion">Iniciar sesión</span></router-link>
-                        <p class=" me-auto mb-2 mb-lg-0 ml-2 user-telefono"><img src="user-telefono.png" alt="Iniciar sesion"/><span class="iniciarsesion"></span>   </p>
-                    </div>
-                    <div class="col-md-3 crear-ceunta-telefono">
-                        <router-link  :to="{ name: 'register' }" class="crearcuenta"> CREAR CUENTA</router-link>
-                    </div>
+                    <template v-if="!isAuthenticated">
+                        <div class="col-md-2 icono nav-item">
+                            <router-link :to="{ name: 'login' }" class=" me-auto mb-2 mb-lg-0"><img src="user.png" class="user-version-telefono" alt="Iniciar sesion"/><span class="iniciarsesion">Iniciar sesión</span></router-link>
+                            <p class=" me-auto mb-2 mb-lg-0 ml-2 user-telefono"><img src="user-telefono.png" alt="Iniciar sesion"/><span class="iniciarsesion"></span>   </p>
+                        </div>
+                        <div class="col-md-3 crear-ceunta-telefono">
+                            <router-link  :to="{ name: 'register' }" class="crearcuenta"> CREAR CUENTA</router-link>
+                        </div>
+                    </template>
+                    <template v-else>
+                        <div class="col-md-5 icono nav-item text-center">
+                            <router-link :to="{ name: 'login' }" class=" me-auto mb-2 mb-lg-0"><img src="user.png" class="user-version-telefono" alt="Iniciar sesion"/><span class="iniciarsesion">{{ this.user.name }}</span></router-link>
+                            <p class=" me-auto mb-2 mb-lg-0 ml-2 user-telefono"><img src="user-telefono.png" alt="Iniciar sesion"/><span class="iniciarsesion"></span>   </p>
+                        </div>
+                    </template>
                 </div>
             </nav>
         </div>
