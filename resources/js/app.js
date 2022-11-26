@@ -1,76 +1,17 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 import './bootstrap';
-import { createApp } from 'vue';
-import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-/**
- * Next, we will create a fresh Vue application instance. You may then begin
- * registering components with the application instance so they are ready
- * to use in your application's views. An example is included for you.
- */
-
-const app = createApp({});
-import Maintain from './pages/landing/maintain.vue';
-import Home from './pages/landing/home.vue';
-import dashboard from './pages/dashboard/dashboard.vue';
+import { createApp } from 'vue';
+import AppComponent from './pages/App.vue'
+import router from './router/index'
+import store from './pages/store/store.js';
 
 
-/*Landings*/
-app.component('Maintain', Maintain);
-app.component('Home', Home);
+const app = createApp({
+    components:{
+        AppComponent,
+    }
+})
 
-
-/*auth & profiles*/
-import Login from './pages/auth/login.vue';
-import Registro from './pages/auth/register.vue';
-import roles from './pages/auth/roles.vue';
-import Startups from './pages/profile/startups.vue';
-import Profesionales from './pages/profile/profesionales.vue';
-import Inversores from './pages/profile/inversores.vue';
-
-app.component('Login', Login);
-app.component('Registro', Registro);
-app.component('roles', roles);
-app.component('dashboard',dashboard);
-app.component('Startups',Startups);
-app.component('Profesionales',Profesionales);
-app.component('Inversores',Inversores);
-
-/* dashboard */
-
-import Empresas from './pages/dashboard/Empresas.vue';
-import Empresa from './pages/dashboard/Empresa.vue';
-import Info from './pages/dashboard/Info.vue';
-import Filtrado from './pages/dashboard/Filtrado.vue';
-
-
-app.component('Empresas',Empresas);
-app.component('Empresa',Empresa);
-app.component('Info',Info);
-app.component('Filtrado',Filtrado);
-
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// Object.entries(import.meta.glob('./**/*.vue', { eager: true })).forEach(([path, definition]) => {
-//     app.component(path.split('/').pop().replace(/\.\w+$/, ''), definition.default);
-// });
-
-/**
- * Finally, we will attach the application instance to a HTML element with
- * an "id" attribute of "app". This element is included with the "auth"
- * scaffolding. Otherwise, you will need to add an element yourself.
- */
-
+app.use(store);
+app.use(router);
 app.mount('#app');

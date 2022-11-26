@@ -1,4 +1,13 @@
+<script>
+    import BaseLayout from '../layouts/template.vue'
+    export default {
+        components: {
+            BaseLayout
+        },
+    }
+</script>
 <template>
+    <BaseLayout>
 <!-- 1RA SECCION  -->
         <div class="row seccion-3">
             <div class="col-md-2">
@@ -109,13 +118,7 @@
 
             </div>
         <!-- FIN 6TA SECCION -->
-
+    </BaseLayout>
 </template>
 
-<script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
-</script>
+

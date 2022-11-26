@@ -379,10 +379,6 @@
         font-size: 16px;
         line-height: 22px;
     }
-    .footer-margin{
-        margin: 51px 200px 50px 200px;
-        height: 250px;
-   }
    .footer-family-titulo{
         font-family: 'DM Sans';
         font-style: normal;
@@ -984,6 +980,7 @@ input.form-control{
 
     background-image: url("/public/roles.png");
     background-size: cover;
+    background-position: center;
 }
 .alinearabajo{
     display: flex;
@@ -1070,4 +1067,9 @@ button#ATRÁS{
 
 }
 
-
+.list_footer ul > li{
+    list-style: none;
+}
+a:hover{
+    color: #F05918 !important;
+}

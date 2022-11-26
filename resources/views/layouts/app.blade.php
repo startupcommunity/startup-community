@@ -19,7 +19,7 @@
             </div>    
         </div>        
         @include('layouts.footer')    
-        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/custom.css'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/custom.css' "resources/js/Pages/{$page['component']}.vue"])
     </body>
 </html>
 
