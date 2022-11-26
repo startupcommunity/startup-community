@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        RolesSeeder::class
+        RolesSeeder::class;
     }
 }
