@@ -16,19 +16,8 @@ class Profile extends Model
      */
     protected $fillable = [
         'username',
-        'license',
         'photo',
-        'handicap',
-        'time_playing',
-        'type',
-        'gender',
-        'birthday',
-        'address',
-        'phone',
-        'province',
-        'cp',
-        'country',
-        'language',
+        'data',
     ];
 
     public function user()
