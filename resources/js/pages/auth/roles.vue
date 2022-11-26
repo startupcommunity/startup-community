@@ -11,7 +11,7 @@
             }
         }, 
         methods: {
-            saveRoll(roll) {
+            async saveRoll(roll) {
                 let actionUrl = '/api/auth/asign/roll';
 
                 const config = {
@@ -20,7 +20,7 @@
                                         }
                                 };
                     this.user.rol = roll;
-                axios.post(actionUrl, this.user ,config)
+               await axios.post(actionUrl, this.user ,config)
                 .then((resp) => {
                     this.$store.dispatch('userRequest');
                     this.$router.push('/data/important');

@@ -1,9 +1,37 @@
+<script>
+export default {
+    data() {
+        return {
+            user: {
+                action:'register',
+                email: "",
+                password: "",
+                password_confirmation:"",
+                name:""
+            },
+            info: null,
+            message: false
+        }
+    },  
+    methods:{
+        async signup() {
+            const { action, name, email, password, password_confirmation } = this.user;
+            this.$store.dispatch('authRequest', { action, name, email, password, password_confirmation })
+                .then(() => {
+                    this.$router.push('/roles')
+                })
+                .catch(error => {
+                    this.message = error.response.data.message
+                });
+        }
+    }
+}
+</script>
 <template> 
 <div class="registro">
     <div class="container">
            <div class="row justify-content-center align-items-center" style="height:100vh">
                <div class="col-xl-4 col-sm-12">             
-                   <div class="card">                   
                        <div class="card-body card-login">
                            <h2>Registrarme</h2>
                            <form action="" autocomplete="off">                                    
@@ -25,30 +53,13 @@
                                </div>                              
                                <h2>Emprende,colabora,invierte y DESCARGA</h2>                            
                                <button type="button" @click="signup()" id="sendlogin" class="btn btn-primary ">¡VAMOS!</button>                            
-                           </form>                                                  
+                           </form> 
+                           <section v-if="message">
+                            <p class="text-white text-center">{{message}}, intente de nuevo</p>
+                        </section>                                                 
                        </div>
-                   </div>
                </div>
            </div>
        </div>
     </div>
     </template>
-    <script>
-    export default {
-        data() {
-            return {
-                user: {
-                    email: "",
-                    password: "",
-                    password_confirmation:"",
-                    name:""
-                }
-            }
-        },  
-        methods:{
-            async signup() {
-                const datos = await axios.post(`${URLAPI}/auth/signup`,this.user);              
-            }
-        }
-    }
-</script>

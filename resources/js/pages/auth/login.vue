@@ -16,7 +16,7 @@
                 const { email, password, remember } = this.user;
                 this.$store.dispatch('authRequest', { email, password, remember })
                 .then(() => {
-                    this.$router.push('dashboard')
+                    this.$router.push('/dashboard')
                 })
                 .catch(error => {
                     this.message = error.response.data.message

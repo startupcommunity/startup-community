@@ -20,22 +20,22 @@ const Filtrado = () => import('../pages/dashboard/Filtrado.vue');
 
 /*middlewares*/
 
-
-
 /*primeros pasos de registro*/
 async function firstSteps(to, from, next){
 	
 	const dataProfile = async () => store.dispatch('userRequest');
 	const asyncValue = await dataProfile();
-
+	//verifico si esta autenticado
     if (!store.getters.isAuthenticated) {
         next('/login');
         return
-    } console.log(store.getters.getProfile)
+    } 
+    //verifico si tiene roll asignado
     if (store.getters.getProfile.rol.length === 0) {
     	next('/roles');
        	return
     }
+    //verifico si posee datos importantes
     if (!store.getters.getProfile.user.profile.data) {
     	next('/data/important');
        	return	
@@ -55,8 +55,8 @@ async function  needAuthenticated(to, from, next){
 /*Si esta autenticado*/
 async function  authDashboard(to, from, next){
     if (store.getters.isAuthenticated) {
-        next('/dashboard');
-        return
+        //next('/dashboard');
+        //return
     }
     next()
 }

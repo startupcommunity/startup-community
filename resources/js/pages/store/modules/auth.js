@@ -23,9 +23,8 @@ const moduleAuth = {
         }
         
         if(payload.action=='register'){
-            actionUrl='/api/auth/register';
+            actionUrl='/api/auth/signup';
             data = {
-                'username':payload.username,
                 'name':payload.name,
                 'email':payload.email,
                 'password':payload.password,
