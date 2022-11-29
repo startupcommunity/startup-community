@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import store from '../pages/store/store.js'
 
-const Maintain = () => import('../pages/landing/maintain.vue');
+const Maintain = () => import('../pages/landing/home.vue');
 const Home = () => import('../pages/landing/home.vue');
 const Dashboard = () => import('../pages/dashboard/dashboard.vue');
 

@@ -43,15 +43,8 @@
         margin-left:85px;
     }
     .a-item{
-        color:#0071BC;
-        margin-top: 45px;
-        margin-bottom: 45px;
         font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        margin-right:15px;
+        font-size: 12px;
     }
     .logo{
         margin-left:120px;
@@ -62,44 +55,26 @@
     .banner-version-telefono{
         display: none;
     }
-    .crearcuenta{
-        background-color: #F05918;
-        padding: 11px 39px;
-        border-color:#F05918;
-        border-radius: 7px;
-        color:white;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-    }
     .icono{
         margin-bottom: 0px;
     }
     .icono1{
-        padding-bottom:36px;
-        margin-left:-250px;
+        margin-left:25%;
     }
     .icono2{
-        padding-bottom:36px;
-        margin-left:-10px;
+        margin-left:40%;
     }
     .icono3{
-        padding-bottom:36px;
-        margin-left:-70px;
+        margin-left:35%;
     }
     .icono4{
-        padding-bottom:36px;
-        margin-left:85px;
+        margin-left:45%;
     }
     .icono5{
-        padding-bottom:36px;
-        margin-left:-30px
+        margin-left:40%;
     }
     .icono6{
-        padding-bottom:36px;
-        margin-left:-190px;
+        margin-left:30%;
     }
 
     h1{
@@ -142,35 +117,20 @@
         padding-top: 10px;
         margin-bottom: px;
     }
-    .boton-comun{
-        margin: 27px  70px 27px 70px;
+    .boton-comun-initial{
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: Nunito;
         font-size: 26px;
-        font-weight: 400;
-        line-height: 35px;
-        letter-spacing: 0em;
-        text-align: left;
-        line-height: 35px;
         background: #035191;
-        color: white;
-        height: 50px;
-        width: 350px;
-        left: 950px;
-        top: 726px;
-        border-radius: 6px;
-        padding: 0px 30px 0px 30px;
-    
-        text-align: center;
 
     }
     .boton-seccion-6{
-        margin: 250px  70px 27px 120px;
+        margin: 250px  0px 27px 100px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: Nunito;
         font-size: 26px;
         font-weight: 400;
@@ -190,10 +150,10 @@
         text-align: center;
     }
     .boton-seccion-7{
-        margin: 350px  0px 0px 180px;
+        margin: 300px  0px 0px 140px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: Nunito;
         font-size: 26px;
         font-weight: 400;
@@ -213,10 +173,10 @@
         text-align: center;
     }
     .boton-seccion-8{
-        margin: 250px  30px 100px 210px;
+        margin: 290px  30px 100px 150px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: Nunito;
         font-size: 26px;
         font-weight: 400;
@@ -235,13 +195,15 @@
 
         text-align: center;
     }
-    .seccion-3{
-        padding: 0px 0 30px 133px;
+    .seccion-welcome{
+        height: 510px;
     }
-    .img-astronauta{
-        margin-right: auto;
+    .seccion-volcan{
+        height: 640px;
     }
-
+    .title-welcome{
+        font-family: Arial Rounded MT Bold;
+    }
     ::placeholder {
         font-family: Nunito;
         font-size: 26px;
@@ -289,12 +251,7 @@
     }
     .texto-p{
         font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 100;
         font-size: 24px;
-        line-height: 33px;
-        text-align: center;
-        color: #FFFFFF;
     }
 
     .texto-p-mision{
@@ -416,25 +373,12 @@
         text-align: left;
         color:white
    }
-   .linea{
-        margin-left: 20%;
-        padding-top: 35px;
-   }
    .linea-1{
         margin-left: 20%;
         /* padding-top: 35px; */
    }
    .linea-1-telefono{
         display: none;
-   }
-   .seccion-2{
-        position: absolute;
-        background-color:#035191;
-        margin-top:-132px;
-        z-index:1000;
-        padding-left: 140px;
-        padding-right: 140px;
-        width: 100%;
    }
 
    .row.justify-content-center {
@@ -511,32 +455,8 @@
         line-height: 22px;
     }
     .texto-linea{
-        width: 328px;
-        height: 72px;
-
         font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 400;
         font-size: 32px;
-        line-height: 36px;
-        /* or 112% */
-        margin-bottom: 20px;
-        padding-top:28px;
-        text-align: center;
-    }
-
-    .texto-p{
-        width: auto;
-        height: auto;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        margin: 0px 0px 0px 0px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 20px 70px 0px 70px;
     }
 
     .texto-p-mision{
@@ -567,12 +487,12 @@
         display: none;
     }
     .boton-comun{
-        margin: 10px  60px 15px 60px;
+        margin: 27px  70px 27px 70px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: Nunito;
-        font-size: 16px;
+        font-size: 26px;
         font-weight: 400;
         line-height: 35px;
         letter-spacing: 0em;
@@ -581,11 +501,11 @@
         background: #035191;
         color: white;
         height: 50px;
-        width: 234px;
+        width: 350px;
         left: 950px;
         top: 726px;
         border-radius: 6px;
-        padding: 0px 11px 0px 11px;
+        padding: 0px 30px 0px 30px;
     
         text-align: center;
     }
@@ -648,7 +568,7 @@
         margin: 0px  60px 25px 80px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 400;
@@ -666,7 +586,7 @@
         margin: 0px  60px 25px 80px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 400;
@@ -687,7 +607,7 @@
         margin: 0px  60px 25px 80px;
         border-radius: 6px;
         box-shadow: 5px 7px 7px rgba(175, 182, 182, 0.25);
-        border: 2px solid #F05918;
+        border: 2px solid #D500F9;
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 400;
@@ -734,37 +654,7 @@
     .redes-sociales{
         padding-top:10px;
     }
-    .icono1{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-    }
-    .icono2{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-    }
-    .icono3{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-    }
-    .icono4{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-        margin-top: -150px;
-    }
-    .icono5{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-    }
-    .icono6{
-        width: 100%;
-        padding-bottom:36px;
-        margin-left:0px;
-    }
+    
 
     .espacio-input-telefono{
         display: block;
@@ -1071,5 +961,9 @@ button#ATRÁS{
     list-style: none;
 }
 a:hover{
-    color: #F05918 !important;
+    color: #D500F9 !important;
+}
+
+.create:hover{
+    background-color: #F3E5F5 !important;
 }

@@ -11,9 +11,7 @@
 <template>
 	<Header />
 	<main>
-		<div class="container">
-			<slot />
-		</div>
+	   <slot />
 	</main>
 	<div class="container">
 		<Footer />
