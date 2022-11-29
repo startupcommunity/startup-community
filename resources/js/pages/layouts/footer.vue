@@ -9,7 +9,7 @@
                     <img src="/img/facebook.png" alt="" style="padding-right:30px;">
                     <img src="/img/twitter.png" alt="" style="padding-right:30px;">
                     <img src="/img/vimeo-social-logo.png" alt="" style="padding-right:30px;">
-                    <img src="/img/Combined Shape.png" alt="" style="padding-right:30px;">
+                    <img src="/img/combined-shape.png" alt="" style="padding-right:30px;">
                 </div>
             </div>
             <div class="col-md-3 list_footer">

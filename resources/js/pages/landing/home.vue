@@ -61,7 +61,7 @@
             </v-row>
             <!-- FIN 4TA SECCION -->
             <!-- 5TA SECCION -->
-            <v-row :style="{ 'background-image': 'url(/startup.png)' }" class="seccion-volcan">
+            <v-row :style="{ 'background-image': 'url(/img/startup.png)' }" class="seccion-volcan">
                 <v-col cols="12">
                     <img src="/img/icono1.png" class="d-flex icono1 py-3" alt="" >
                     <img src="/img/icono2.png" class="d-flex icono2 py-3" alt="" >
