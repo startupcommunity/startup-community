@@ -1,3 +1,6 @@
+    body{
+        font-family: 'Nunito' !important;
+    }
     .espacio-input-telefono{
         display: none;
     }
@@ -59,16 +62,16 @@
         margin-bottom: 0px;
     }
     .icono1{
-        margin-left:25%;
-    }
-    .icono2{
-        margin-left:40%;
-    }
-    .icono3{
         margin-left:35%;
     }
-    .icono4{
+    .icono2{
         margin-left:45%;
+    }
+    .icono3{
+        margin-left:40%;
+    }
+    .icono4{
+        margin-left:50%;
     }
     .icono5{
         margin-left:40%;
@@ -197,12 +200,18 @@
     }
     .seccion-welcome{
         height: 510px;
+        background-position: center;
     }
     .seccion-volcan{
         height: 640px;
+        background-position: 20%;
+
+    }
+    .seccion-final{
+        background-size: cover;
     }
     .title-welcome{
-        font-family: Arial Rounded MT Bold;
+        font-family: 'Nunito' !important;
     }
     ::placeholder {
         font-family: Nunito;
@@ -539,7 +548,7 @@
     }
 
     .seccion-6{
-        background-image:url("tresautroauta.png") !important;
+        background-image:url("/img/tresautroauta.png") !important;
         padding-left: 0px;
         padding-right: 0px;
         background-size: 100%;
@@ -733,7 +742,7 @@
         color:red;
     }
     .navbar-toggler-icon{
-        background-image: url("menu.png");
+        background-image: url("/img/menu.png");
     }
     .a-item {
         color: white;
@@ -822,12 +831,12 @@ h2{
 
 
 .login{
-    background-image: url("/public/Login.png");
+    background-image: url("/public/img/login.png");
     background-size: cover;
 }
 
 .registro{
-    background-image: url("/public/Login.png");
+    background-image: url("/public/img/login.png");
     background-size: cover;
 }
 
@@ -868,7 +877,7 @@ input.form-control{
 /* fondo de pagina roles */
 .roles{
 
-    background-image: url("/public/roles.png");
+    background-image: url("/public/img/roles.png");
     background-size: cover;
     background-position: center;
 }
@@ -888,7 +897,7 @@ button#roles{
 }
 /*rol startup*/
 .startups{
-    background-image: url("/public/startups.png");
+    background-image: url("/public/img/startups.png");
     background-size: cover;
 }
 .datastartup{
@@ -907,14 +916,14 @@ button#roles{
 
 .profesionales{
 
-background-image: url("/public/profesionales.png");
+background-image: url("/public/img/profesionales.png");
 background-size: cover;
 
 }
 /*rol inversores*/
 .inversores{
 
-    background-image: url("/public/Inversores.png");
+    background-image: url("/public/img/inversores.png");
     background-size: cover;
 
 }
@@ -925,37 +934,7 @@ h3{
     white-space: nowrap;
     justify-content: center;
 }
-.botoness{
-    display: flex;
-}
-button#SIGUIENTE{
 
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
-    color: white ;
-    border-radius: 5px;
-    width: 40%;
-    background-color: transparent;
-     font-weight: bold;
-    border-color:  #BD13B8;
-
-}
-
-button#ATRÁS{
-
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
-    color: white;
-    border-radius: 5px;
-    width: 40%;
-    background-color: transparent;
-    font-weight: bold;
-    border-color: white;
-
-
-}
 
 .list_footer ul > li{
     list-style: none;

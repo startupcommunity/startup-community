@@ -6,10 +6,10 @@
                 <p class="p-item-6">Hello, we are ABC. trying to make an<br> effort to put the right people for you<br>  to get the best results. Just insight</p>
                 <input type="text" class="busqueda">
                     <div class="redes-sociales">
-                    <img src="facebook.png" alt="" style="padding-right:30px;">
-                    <img src="twitter.png" alt="" style="padding-right:30px;">
-                    <img src="vimeo-social-logo.png" alt="" style="padding-right:30px;">
-                    <img src="Combined Shape.png" alt="" style="padding-right:30px;">
+                    <img src="/img/facebook.png" alt="" style="padding-right:30px;">
+                    <img src="/img/twitter.png" alt="" style="padding-right:30px;">
+                    <img src="/img/vimeo-social-logo.png" alt="" style="padding-right:30px;">
+                    <img src="/img/Combined Shape.png" alt="" style="padding-right:30px;">
                 </div>
             </div>
             <div class="col-md-3 list_footer">
@@ -38,7 +38,7 @@
                         <li><a href="javascript:void(0);" class="d-flex a-items-6">Customers</a></li>
                         <li><a href="javascript:void(0);" class="d-flex a-items-6">Contact us</a></li>
                     </ul>
-                    <img src="logo_blanco.png" alt="" style="padding-top:20px;">
+                    <img src="/img/logo_blanco.png" alt="" style="padding-top:20px;">
                 </div>
             </footer>
             <!-- </footer> -->          

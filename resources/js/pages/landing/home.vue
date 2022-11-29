@@ -10,9 +10,9 @@
     <BaseLayout>
         <v-container fluid>
             <!-- 1RA SECCION  -->
-            <v-row class="mt-15 seccion-welcome" :style="{ 'background-image': 'url(/astronauta_home.png)' }">
+            <v-row class="mt-15 seccion-welcome" :style="{ 'background-image': 'url(/img/astronauta_home.png)' }">
                 <v-col cols="12" class="mx-auto">
-                    <h2 class="text-center text-h3 title-welcome">
+                    <h2 class="text-center text-h2 title-welcome">
                         <strong>Bienvenido a un Universo de <br> Alto Valor</strong>
                     </h2>
 
@@ -31,7 +31,7 @@
             <!-- FIN 2DA SECCION -->
             <!-- 3RA SECCION -->
             <v-row class="d-flex justify-space-around align-center flex-column flex-sm-row my-5">
-                <img src="Line 9.png" class="my-6 text-center mx-auto align-center" alt="">
+                <img src="/img/line_9.png" class="my-6 text-center mx-auto align-center" alt="">
                 <v-col cols="12" >
                     <h3 class="texto-linea text-center ">
                         ¡Somos la Comunidad StartUp! <br>
@@ -49,7 +49,7 @@
             <!-- FIN 3RA SECCION -->
             <!-- 4TA SECCION -->
             <v-row class="d-flex justify-space-around align-center flex-column flex-sm-row mt-5">
-                <img src="Line 9.png" class="mt-6 text-center mx-auto align-center" alt="">
+                <img src="/img/line_9.png" class="mt-6 text-center mx-auto align-center" alt="">
                 <v-col cols="12" >
                     <h3 class="texto-linea text-center">
                         ¡Prepárate para despegar!
@@ -63,17 +63,17 @@
             <!-- 5TA SECCION -->
             <v-row :style="{ 'background-image': 'url(/startup.png)' }" class="seccion-volcan">
                 <v-col cols="12">
-                    <img src="icono1.png" class="d-flex icono1 py-3" alt="" >
-                    <img src="icono2.png" class="d-flex icono2 py-3" alt="" >
-                    <img src="icono3.png" class="d-flex icono3 py-3" alt="">
-                    <img src="icono4.png" class="d-flex icono4 py-3" alt="">
-                    <img src="icono5.png" class="d-flex icono5 py-3" alt="">
-                    <img src="icono6.png" class="d-flex icono6 py-3" alt="">
+                    <img src="/img/icono1.png" class="d-flex icono1 py-3" alt="" >
+                    <img src="/img/icono2.png" class="d-flex icono2 py-3" alt="" >
+                    <img src="/img/icono3.png" class="d-flex icono3 py-3" alt="">
+                    <img src="/img/icono4.png" class="d-flex icono4 py-3" alt="">
+                    <img src="/img/icono5.png" class="d-flex icono5 py-3" alt="">
+                    <img src="/img/icono6.png" class="d-flex icono6 py-3" alt="">
                 </v-col>
             </v-row>
             <!-- FIN 5TA SECCION -->
             <!-- 6TA SECCION -->
-            <v-row :style="{ 'background-image': 'url(/tresautronauta.png)' }" class="py-3 mt-8">
+            <v-row :style="{ 'background-image': 'url(/img/tresautronauta.png)' }" class="py-3 mt-8 seccion-final">
                 <v-col cols="4">
                     <button class="boton-seccion-6">Startup</button>
                 </v-col>
@@ -87,7 +87,7 @@
                 <v-col cols="12" >
                     <h3 class="h3-title-6 mb-2">¿Estás preparado para<br> el despegue?</h3>
                     <div class="d-flex justify-center mt-2">
-                        <v-btn :to="{ name: 'register' }" color="purple-accent-2" variant="flat" class="mx-3 create"> 
+                        <v-btn :to="{ name: 'register' }" color="purple-accent-2" variant="flat" class="create"> 
                             CREAR CUENTA
                         </v-btn>
                     </div>
@@ -97,4 +97,9 @@
         </v-container>
     </BaseLayout>
 </template>
+<style>
+    .title-welcome{
+        font-family: 'Nunito' !important;
+    }
+</style>
 
