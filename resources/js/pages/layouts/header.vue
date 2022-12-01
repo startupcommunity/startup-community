@@ -74,18 +74,29 @@
                         </v-col>
                     </v-row>
                     <v-row v-else>
-                        <v-btn class="nav-link text-light-blue-lighten-1" height="100%">
-                            <v-avatar color="light-blue-lighten-1" size="x-large">
-                              <v-img
-                                src="/img/user.png"
-                                :alt="user.name"
-                                cover
-                                max-height="20"
-                                max-width="20"
-                              ></v-img>
-                            </v-avatar>
-                            <span class="d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex ml-3">{{user.name}}</span>
-                        </v-btn>
+                        <v-menu>
+                          <template v-slot:activator="{ props }">
+                            <v-btn class="nav-link text-light-blue-lighten-1" height="100%" v-bind="props">
+                                <v-avatar color="light-blue-lighten-1" size="x-large">
+                                  <v-img
+                                    src="/img/user.png"
+                                    :alt="user.name"
+                                    cover
+                                    max-height="20"
+                                    max-width="20"
+                                  ></v-img>
+                                </v-avatar>
+                                <span class="d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex ml-3">{{user.name}}</span>
+                            </v-btn>
+                          </template>
+                          <v-list color="light-blue-darken-4" class="text-center mt-5">
+                            <v-list-item variant="plain" class="text-light-blue-darken-4 text-subrayado"> 
+                                Ir a mi panel 
+                                <v-divider></v-divider>
+                            </v-list-item>
+                            <v-list-item variant="plain" class="text-light-blue-darken-4 text-subrayado" @click="logout()"> Cerrar sesión </v-list-item>
+                          </v-list>
+                        </v-menu>
                         <v-btn class="text-none" stacked size="sm">
                           <v-badge color="error">
                             <img src="/img/notification.png" max-height="10" max-width="10">
@@ -117,6 +128,17 @@
                 drawer:null,
             }
         },
+        methods:{
+            logout(){
+                this.$store.dispatch('authLogout',)
+                .then(() => {
+                    this.$router.push('/home')
+                })
+                .catch(error => {
+                    this.message = error.response.data.message
+                });
+            }
+        }
     }
 </script>
 <style type="text/css">
