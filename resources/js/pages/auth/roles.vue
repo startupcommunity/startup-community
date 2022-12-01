@@ -1,3 +1,27 @@
+<template>
+<div class=" col-xl-12 col-sm-12">
+ <div class="roles">
+       <div class="container">
+           <div class="row justify-content-center " style="height:100vh">
+               <div class=" col-xl-12 col-sm-12">				          
+                           <h2> Completa tu registro <br>Que tipo de tripulante eres? </h2>                                                                                                                
+                       </div>     
+                       <div class="alinearabajo">
+                                  <button type="button" id="roles" @click="saveRoll('startup')">STARTUP</button> 
+                                  <button type="button" id="roles" @click="saveRoll('professional')">PROFESIONALES</button> 
+                                  <button type="button" id="roles" @click="saveRoll('investor')">INVERSORES</button>       
+                        </div>  
+                        <section v-if="message">
+                            <p class="text-white text-center">{{message}}, intente de nuevo</p>
+                        </section>
+                        <section v-if="info">
+                            <p class="text-white text-center">{{info}}</p>
+                        </section>
+                     </div>                
+                 </div>    
+            </div>   
+       </div>  
+</template>
 <script>
     export default {
         data() {
@@ -33,27 +57,3 @@
         }
     }
 </script>
-<template>
-<div class=" col-xl-12 col-sm-12">
- <div class="roles">
-       <div class="container">
-           <div class="row justify-content-center " style="height:100vh">
-               <div class=" col-xl-12 col-sm-12">				          
-                           <h2> Completa tu registro <br>Que tipo de tripulante eres? </h2>                                                                                                                
-                       </div>     
-                       <div class="alinearabajo">
-                                  <button type="button" id="roles" @click="saveRoll('startup')">STARTUP</button> 
-                                  <button type="button" id="roles" @click="saveRoll('professional')">PROFESIONALES</button> 
-                                  <button type="button" id="roles" @click="saveRoll('investor')">INVERSORES</button>       
-                        </div>  
-                        <section v-if="message">
-                            <p class="text-white text-center">{{message}}, intente de nuevo</p>
-                        </section>
-                        <section v-if="info">
-                            <p class="text-white text-center">{{info}}</p>
-                        </section>
-                     </div>                
-                 </div>    
-            </div>   
-       </div>  
-</template>
